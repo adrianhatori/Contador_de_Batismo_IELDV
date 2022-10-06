@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg_video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    min-width: 100vh;
+    height: 100%;
+    width: 100%;
+    z-index: -20;
+    background-size: cover;
+}
+.bg_img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1000;
+    background-size: cover;
+}
+
+#content {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgba(190, 190, 190, 0.3);
+    text-shadow: red rgb(255, 0, 0);
+}
+
+.contador {
+    font-size: 15vmax;
+    color: white;
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
