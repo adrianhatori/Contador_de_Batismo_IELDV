@@ -15,6 +15,10 @@ let intervaloMinimo = (tempoMaximo / valorFinal);
 function somaNaTela() {
     contador.innerHTML = i+1;
 }
+//Diminui valor do contador
+function subtraiNaTela() {
+    contador.innerHTML = i-1;
+}
 
 /*Soma 1 ao indice e chama*/
 function soma_adiciona() {
@@ -26,6 +30,11 @@ function soma_adiciona() {
         somaNaTela();
         i++;
     }
+}
+//Diminui 1 do indice
+function diminui_subtrai() {
+    subtraiNaTela();
+    i--;
 }
 
 //atualiza o intervalo, responsavel pela velocidade de mudança dos numeros
@@ -63,10 +72,13 @@ function start() {
 
 /*Reconhece teclas apertadas*/
 document.addEventListener("keydown", function (event) {
-    if(event.key = " " && i >= valorFinal - 1){
+    if(event.key == "ArrowUp" && i >= (valorFinal - 1)){
         soma_adiciona();
     } else
-    if(event.key = "Enter" && i < 1){
+    if(event.key == "ArrowDown" && i > (valorFinal)){
+        diminui_subtrai();
+    } else
+    if(event.key == "Enter" && (i < 1)){
         start();
     };
 });
