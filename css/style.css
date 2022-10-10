@@ -1,3 +1,5 @@
+
+
 .bg_video{
     position: fixed;
     
@@ -5,8 +7,9 @@
     min-width: 100vh;
     height: 100%;
     width: 100%;
-    z-index: -20;
+    z-index: -30;
     background-size: cover;
+    object-fit: fill;
 }
 .bg_img {
     position: fixed;
@@ -19,7 +22,6 @@
     z-index: -1000;
     background-size: cover;
 }
-
 #content {
     height: 100vh;
     display: grid;
@@ -27,8 +29,17 @@
     background: rgba(190, 190, 190, 0.3);
     text-shadow: red rgb(255, 0, 0);
 }
-
+.logo {
+    position:relative;
+    left:-20vw;
+    top:20vh;
+    width: 80vmax;
+    z-index: -20;
+}
 .contador {
+    position:relative;
+    left:30vw;
+    top:-35vh;
     font-size: 15vmax;
     color: white;
     font-weight: bold;
