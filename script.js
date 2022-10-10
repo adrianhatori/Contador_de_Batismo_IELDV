@@ -63,10 +63,10 @@ function start() {
 
 /*Reconhece teclas apertadas*/
 document.addEventListener("keydown", function (event) {
-    if(event.key = " " && i >= valorFinal - 1){
+    if(event.key == " " && i >= (valorFinal - 1)){
         soma_adiciona();
-    } else
-    if(event.key = "Enter" && i < 1){
+    } else    
+    if(event.key == "Enter" && i < 1){
         start();
     };
 });
